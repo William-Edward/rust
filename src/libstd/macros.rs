@@ -90,7 +90,7 @@ macro_rules! print {
 /// println!("hello there!");
 /// println!("format {} arguments", "some");
 /// println!("{:?}", vec![1, 2]); // prints [1, 2]
-
+/// ```
 #[macro_export]
 #[stable(feature = "rust1", since = "1.0.0")]
 #[allow_internal_unstable(print_internals, format_args_nl)]
