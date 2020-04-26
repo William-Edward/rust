@@ -55,6 +55,8 @@ macro_rules! panic {
 /// print!("this string has a newline, why not choose println! instead?\n");
 ///
 /// io::stdout().flush().unwrap();
+///
+/// print!("{:?}", vec![1, 2]); // prints [1, 2]
 /// ```
 #[macro_export]
 #[stable(feature = "rust1", since = "1.0.0")]
@@ -87,7 +89,8 @@ macro_rules! print {
 /// println!(); // prints just a newline
 /// println!("hello there!");
 /// println!("format {} arguments", "some");
-/// ```
+/// println!("{:?}", vec![1, 2]); // prints [1, 2]
+
 #[macro_export]
 #[stable(feature = "rust1", since = "1.0.0")]
 #[allow_internal_unstable(print_internals, format_args_nl)]
